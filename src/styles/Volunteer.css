@@ -12,7 +12,7 @@ div.main{
 }
 .main h2{
     position: absolute;
-    top:15%;
+    top:15vh;
     left:50%;
     transform: translate(-50%,-50%);
     width: 60vw;
@@ -23,7 +23,7 @@ div.main{
 }
 .main h2:nth-of-type(2){
     position: absolute;;
-    top:90%;
+    top:80vh;
     left:50%;
     transform: translate(-50%,-50%);
     width: 80vw;
@@ -36,7 +36,7 @@ div.main{
 }
 .main p{
 position: absolute;
-top:50%;
+top:55vh;
 left:50%;
 transform: translate(-50%,-50%);
 width:80vw;
@@ -130,7 +130,7 @@ div.part2 button {
  } 
 
     .main h2{
-    top:25%;
+    top:15vh;
     }
 .main h2:nth-of-type(2){
     top:115%;
@@ -180,7 +180,7 @@ div.part2 button {
  }
 
    .main h2{
-   top:25%;
+   top:15vh;
    }
 .main h2:nth-of-type(2){
    top:115%;
