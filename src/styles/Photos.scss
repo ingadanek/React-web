@@ -1,0 +1,112 @@
+.App{
+    display:flex;
+    height: 40vh ;
+    width:100vw;
+    overflow: hidden;
+    background-color: #D2D2CA;
+}
+.main{
+    flex-grow: 1;
+    position:relative;
+}
+
+.cards-slider{
+    position:absolute;
+    top:70%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    max-width:200px;
+    margin:0 auto;
+}
+
+.cards-slider::after {
+    content:'';
+    display:block;
+    width:100%;
+    height: 200px;
+    outline: 5px solid #584333;
+    position:absolute;
+    top:0;
+    left:0;
+} 
+.cards-slider-wrapper{
+    display:flex;
+    transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+    .card{
+        position:relative;
+        min-width:200px;
+        opacity: 0.5;
+        transform: scale(0.8);
+        transition: opacity 300ms linear, transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    }
+    .card h3{
+        position:absolute;
+        left:0;
+        top:110%;
+        opacity:0;
+        transition: opacity 300ms linear;
+        font-size: 20px;
+        width: 150%;
+        font-family: lato;
+        color: #384641;
+       }
+   
+    $i: 0;
+    @for $i from 0 through 7{
+    .cards-slider.active-slide-#{$i} #card-#{$i}{
+        opacity:1;
+        transform: scale(1);
+     }
+    .cards-slider.active-slide-#{$i} #card-#{$i} h3{
+        opacity:1;
+     }
+    }
+
+     .col{
+        height:200px;
+        position:relative;
+         top:55%;
+         left:50%;
+         transform: translate(-50%, -50%);
+         &:before,
+         &:after {
+         content:'';
+          display: block;
+          width: 50%;
+          height:120%;
+        background: linear-gradient(to right, rgba(210,210,202,1) 15%, rgba(210, 210, 202, 0) 100%);
+        position:absolute;
+        z-index:2;
+        }
+        &:after {
+            left:auto;
+            right:0;
+             background:linear-gradient(to left, rgba(210,210,202,1) 15%, rgba(210, 210, 202, 0) 100%);
+        }
+
+     }
+
+button.prev{
+    top:20vh;
+    left:43vw;
+    margin-right: 20px;
+}
+button.next{
+    top:20vh;
+    left:51vw;
+}
+
+@media (min-width:1025px) and (max-width:1300px){
+    .App {
+        height:40vh;
+    }
+    button.prev{
+        top:20vh;
+        left:40vw;
+        margin-right: 20px;
+    }
+}
+
+
+

@@ -1,0 +1,145 @@
+
+body{
+    overflow-x:hidden;
+    background-color: #D2D2CA;
+}
+div.page{
+    position: relative;
+}
+div.bio{
+    position: relative;
+    width:70%;
+    min-height: 120vh;
+    font-family: anonymous pro;
+    margin-top:10vh;
+}
+.bio h2{
+    position: absolute;
+    top:12%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 50vw;
+    text-align: center;
+    color: #384641;
+    line-height: 150%;
+    font-size: 24px;
+}
+.bio p{
+position: absolute;
+top:70%;
+left:50%;
+transform: translate(-50%,-50%);
+width:60vw;
+line-height: 1.5;
+color: #384641;
+border-top: 1px solid darkred;
+padding:60px 0 80px;
+font-size: 18px;
+}
+
+blockquote {
+position:absolute;
+top:27%;
+left:75%;
+border: 2px solid grey;
+border-radius: 10px;
+margin-right: 40px;
+padding-left:9px;
+}
+blockquote p {
+    width: 98%;
+    font-family: lato;
+    word-spacing: 3px;
+    color:#384641;
+    padding-left: 10px;
+    text-align: right;
+}
+blockquote:nth-of-type(2){
+    top: 50%;
+}
+blockquote:nth-of-type(3){
+    top: 67%;
+}
+
+.page footer.biog {
+    position: absolute;
+    bottom:-20vh;
+    left:0;
+    width:100vw;
+    text-align: center;
+    font-size: 16px;
+    font-family: arial;
+    background-color: #999;
+   
+}
+
+
+footer p {
+    color: white;
+    text-align: center;
+    padding-left: 300px;
+}
+
+@media (min-width:1025px) and (max-width:1300px) {
+     .page footer.biog{
+        position: absolute;
+        bottom:-44.5vh; 
+        left:0;
+
+    } 
+    .bio h2{
+        top:20%;
+        padding-bottom:10%;
+    }
+   
+    .bio p{
+    top:80%; 
+    }
+    
+    blockquote p {
+        width: 99%;
+        text-align: center;
+        padding-left:7%;
+    }
+    blockquote:nth-of-type(1){
+        top: 20%;    }
+    blockquote:nth-of-type(2){
+        top: 51%;
+    }
+    blockquote:nth-of-type(3){
+        top: 73%;
+    }
+    
+}
+@media (min-width:1301px) and (max-width:1440px) {
+     .page footer.biog{
+        position: absolute;
+        bottom:-50vh; 
+        left:0;
+
+    } 
+    .bio h2{
+        top:30%;
+        padding-bottom:10%;
+    }
+   
+    .bio p{
+    top:85%; 
+    padding-top:7%;
+    }
+    
+    blockquote p {
+        width: 99%;
+        text-align: center;
+        padding-left:7%;
+    }
+    blockquote:nth-of-type(1){
+        top: 20%;    }
+    blockquote:nth-of-type(2){
+        top: 51%;
+    }
+    blockquote:nth-of-type(3){
+        top: 73%;
+    }
+    
+}
